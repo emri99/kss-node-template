@@ -23,7 +23,10 @@
             <ul class="kss-menu" data-kss-ref="{{rootName}}">
               <li class="kss-menu-item"><a href="./index.html"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
               {{#eachRoot}}
-              <li class="kss-menu-item"><a href="section-{{reference}}.html"><span class="kss-ref">{{reference}}</span><span class="kss-name">{{header}}</span></a></li>
+              <li class="kss-menu-item"><a href="section-{{reference}}.html">
+                <span class="kss-ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span>
+                <span class="kss-name">{{header}}</span>
+              </a></li>
               {{/eachRoot}}
             </ul>
             {{#if homepage}}
@@ -32,7 +35,10 @@
               {{#eachSection rootName}}
               {{#ifDepth 1}}
               {{else}}
-              <li class="kss-menu-item"><a href="#section-{{reference}}"><span class="kss-ref">{{reference}}</span><span class="kss-name">{{header}}</span></a></li>
+              <li class="kss-menu-item"><a href="#section-{{reference}}">
+                <span class="kss-ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span>
+                <span class="kss-name">{{header}}</span>
+              </a></li>
               {{/ifDepth}}
               {{/eachSection}}
             </ul>
@@ -49,7 +55,10 @@
           {{else}}
           {{#eachSection rootName}}
           <section id="section-{{reference}}" class="kss-section kss-depth-{{depth}}">
-            <h1 class="kss-title"><span class="kss-ref">{{reference}}</span> {{header}}</h1>
+            <h1 class="kss-title">
+              <span class="kss-ref">{{#ifNumeric reference}}{{reference}}{{else}}{{autoincrement}}{{/ifNumeric}}</span>
+              {{header}}
+            </h1>
             {{#if markup}}
             {{#if description}}
             <div class="kss-description">
