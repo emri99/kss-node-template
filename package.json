@@ -6,10 +6,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/htanjo/kss-node-template.git"
+    "url": "https://github.com/emri99/kss-node-template.git"
   },
-  "homepage": "http://htanjo.github.io/kss-node-template/",
-  "bugs": "https://github.com/htanjo/kss-node-template/issues",
+  "homepage": "http://emri99.github.io/kss-node-template/",
+  "bugs": "https://github.com/emri99/kss-node-template/issues",
   "keywords": [
     "kss",
     "kss-node",
@@ -24,7 +24,7 @@
   "scripts": {
     "build:css": "lessc template/public/kss.less template/public/kss.css",
     "build:demo-css": "lessc demo/src/bootstrap.less demo/dist/bootstrap.css",
-    "build:demo-kss": "kss-node demo/src demo/dist --template template --css bootstrap.css",
+    "build:demo-kss": "kss-node demo/src demo/dist --template template --css bootstrap.css --title 'kss-node Styleguide'",
     "build:demo": "npm run build:demo-css && npm run build:demo-kss",
     "build": "npm run build:css && npm run build:demo"
   },

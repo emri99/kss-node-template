@@ -10,7 +10,7 @@ You can see the example styleguide from the left navi.
 
 Demo
 ----
-**[Example Styleguide](http://htanjo.github.io/kss-node-template/)**
+**[Example Styleguide](http://emri99.github.io/kss-node-template/)**
 
 ### Features
 * For keeping compatible with your any CSS, optimize the document's style code.
@@ -20,10 +20,10 @@ Demo
 
 Download
 --------
-**[kss-node-template](https://github.com/htanjo/kss-node-template/archive/master.zip)** [zip] or
+**[kss-node-template](https://github.com/emri99/kss-node-template/archive/master.zip)** [zip] or
 
 ```
-git clone git://github.com/htanjo/kss-node-template.git
+git clone git://github.com/emri99/kss-node-template.git
 ```
 
 **Note:** This package contains only template files.
@@ -33,11 +33,11 @@ You have to install kss-node at first.
 How to apply this template
 --------------------------
 1. Install kss-node. Type `npm install kss` or `npm install -g kss` for global CLI.
-2. Download [kss-node-template](https://github.com/htanjo/kss-node-template/archive/master.zip) and copy the "template" folder into your working directory.
+2. Install kss-node-template. Type `npm install emri99/kss-node-template --save-dev`
 3. Run `kss-node` command with `--template` option, like below.
 
 ```
-kss-node <sourcedir> --template path/to/template
+kss-node <sourcedir> --template node_modules/kss-node-template/template
 ```
 
 

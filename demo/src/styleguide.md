@@ -8,13 +8,12 @@ kss-node enables us to generate a beatiful styleguide for CSS, of course that su
 You can see the example styleguide from the left navi.
 That is thanks to [Twitter Bootstrap](http://twitter.github.io/bootstrap/).
 
-
 Download
 --------
-**[kss-node-template](https://github.com/htanjo/kss-node-template/archive/master.zip)** [zip] or
+**[kss-node-template](https://github.com/emri99/kss-node-template/archive/master.zip)** [zip] or
 
 ```
-git clone git://github.com/htanjo/kss-node-template.git
+git clone git://github.com/emri99/kss-node-template.git
 ```
 
 **Note:** This package contains only template files.
@@ -24,17 +23,17 @@ You have to install kss-node at first.
 How to apply this template
 --------------------------
 1. Install kss-node. Type `npm install kss` or `npm install -g kss` for global CLI.
-2. Download [kss-node-template](https://github.com/htanjo/kss-node-template/archive/master.zip) and copy the "template" folder into your working directory.
+2. Install kss-node-template. Type `npm install emri99/kss-node-template --save-dev`
 3. Run `kss-node` command with `--template` option, like below.
 
 ```
-kss-node <sourcedir> --template path/to/template
+kss-node <sourcedir> --template node_modules/kss-node-template/template
 ```
 
 
 License
 -------
-This template is under the [MIT License](https://github.com/htanjo/kss-node-template/blob/master/LICENSE).
+This template is under the [MIT License](https://github.com/emri99/kss-node-template/blob/master/LICENSE).
 
 
 kss-node quickstart
@@ -139,7 +138,7 @@ And each description supports the Markdown writing.
 More example code
 -----------------
 This document is also created by using kss-node.
-You can see the source code in the [demo directory](https://github.com/htanjo/kss-node-template/tree/master/demo/src).
+You can see the source code in the [demo directory](https://github.com/emri99/kss-node-template/tree/master/demo/src).
 
 
-<a href="https://github.com/htanjo/kss-node-template"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+<a href="https://github.com/emri99/kss-node-template"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
