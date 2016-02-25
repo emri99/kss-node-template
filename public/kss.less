@@ -5,20 +5,31 @@ body {
   margin: 0;
 }
 
-// Import rainbow.js highlighter.
-@import "rainbow-github";
-
 #kss-node {
+
+  // Import highlight.js theme
+  @import "github";
 
   border-top: 4px solid @key-color;
   background: #fff;
 
-  // Variables
+  // Variables (blue theme by default)
   @text-color: #222;
-  @key-color: #972;
+  @key-color: #18A6E2;
+  @link-color: #08a;
+  @link-hover-color: #068;
   @border-color: #e3e3e3;
   @wrapper-width: 960px;
   @sidebar-width: 220px;
+  @code-font: Consolas, Menlo,'Liberation Mono', Courier, monospace;
+
+  // availables themes:
+  //   theme-blue
+  //   theme-green
+  //   theme-orange
+  //   theme-red
+  //   theme-yellow
+  @import "theme-red";
 
   // Mixins
   .base-styles() {
@@ -87,7 +98,6 @@ body {
       .pre-styles();
       overflow: auto;
       padding: 8px 12px;
-      border: 1px solid @border-color;
     }
     a,
     img,
@@ -97,11 +107,11 @@ body {
       display: inline;
     }
     a {
-      color: #08a;
+      color: @link-color;
       text-decoration: none;
       &:hover {
         text-decoration: underline;
-        color: #068;
+        color: @link-hover-color;
       }
     }
     img {
@@ -120,7 +130,7 @@ body {
     }
     code {
       .code-styles();
-      padding: 1px 2px;
+      padding: 0px 5px;
       border: 1px solid @border-color;
       vertical-align: 1px;
     }
@@ -132,12 +142,17 @@ body {
   .pre-styles() {
     white-space: pre;
     word-wrap: normal;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f8f8f8;
   }
   .code-styles() {
     line-height: 1.5;
     font-size: 13px;
-    font-family: Consolas, Menlo,'Liberation Mono', Courier, monospace;
-    color: @text-color
+    font-family: @code-font;
+    color: @text-color;
+    background-color: #f8f8f8;
+    border-radius: 3px;
   }
   .clearfix() {
     &:before,
@@ -183,7 +198,10 @@ body {
   .kss-sidebar-inner {
     padding: 40px 0 10px;
   }
-
+  // Header
+  .kss-header {
+    background: #fff;
+  }
   // Document title
   .kss-doc-title {
     .base-styles();
@@ -210,6 +228,7 @@ body {
     > .kss-menu-item {
       .base-styles();
       font-size: 14px;
+      display: block;
       > a {
         .clearfix();
         display: block;
@@ -362,6 +381,7 @@ body {
       overflow: auto;
       margin: 0;
       padding: 12px 15px;
+      border-radius: 0 3px 3px 0;
       border-top: 1px solid @border-color;
       border-left: 2px solid @key-color;
       border-right: 1px solid @border-color;
@@ -369,6 +389,9 @@ body {
     }
     code {
       .code-styles();
+      span {
+        font-family: @code-font;
+      }
     }
   }
 
