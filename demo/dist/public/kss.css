@@ -7,7 +7,6 @@ body {
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 */
-  border-top: 4px solid #f02426;
   background: #fff;
 }
 #kss-node .hljs-comment,
@@ -102,6 +101,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 #kss-node .hljs-chunk {
   color: #aaa;
 }
+#kss-node .kss-lineup {
+  height: 4px;
+  background-color: #f02426;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+}
 #kss-node .kss-wrapper {
   width: 960px;
   margin: 0 auto;
@@ -124,7 +132,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
 #kss-node .kss-sidebar.kss-fixed {
   position: fixed;
-  top: 4px;
+  top: 0px;
 }
 #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner {
   padding-top: 44px;

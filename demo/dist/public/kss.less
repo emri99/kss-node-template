@@ -10,7 +10,7 @@ body {
   // Import highlight.js theme
   @import "github";
 
-  border-top: @border-top-width solid @key-color;
+  //border-top: @border-top-width solid @key-color;
   background: #fff;
 
   // Variables (blue theme by default)
@@ -172,6 +172,16 @@ body {
     text-overflow: ellipsis;
   }
 
+  .kss-lineup {
+    height: @border-top-width;
+    background-color: @key-color;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 5;
+  }
+
   // Layout
   .kss-wrapper {
     .clearfix();
@@ -195,7 +205,7 @@ body {
 
     &.kss-fixed {
       position: fixed;
-      top: @border-top-width;
+      top: 0px;
       .kss-sidebar-inner {
         padding-top: 40px + 4px;  // Keep border height
       }
