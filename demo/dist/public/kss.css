@@ -103,9 +103,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: #aaa;
 }
 #kss-node .kss-wrapper {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 #kss-node .kss-wrapper:before,
 #kss-node .kss-wrapper:after {
@@ -119,6 +118,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   float: left;
   width: 220px;
   overflow: hidden;
+  padding: 0 10px 2000px 10px;
+  background-color: white;
+  z-index: 1;
 }
 #kss-node .kss-sidebar.kss-fixed {
   position: fixed;

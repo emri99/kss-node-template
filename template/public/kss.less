@@ -174,9 +174,8 @@ body {
   // Layout
   .kss-wrapper {
     .clearfix();
-    width: @wrapper-width - 20px;
+    width: @wrapper-width;
     margin: 0 auto;
-    padding: 0 10px;
   }
 
   // Sidebar
@@ -187,6 +186,12 @@ body {
     float: left;
     width: @sidebar-width;
     overflow: hidden;
+
+    // avoid content written under sidebar
+    padding: 0 10px 2000px 10px;
+    background-color: white;
+    z-index: 1;
+
     &.kss-fixed {
       position: fixed;
       top: 0;
