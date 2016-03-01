@@ -124,7 +124,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 }
 #kss-node .kss-sidebar.kss-fixed {
   position: fixed;
-  top: 0;
+  top: 4px;
 }
 #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner {
   padding-top: 44px;

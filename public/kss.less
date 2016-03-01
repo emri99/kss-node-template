@@ -10,7 +10,7 @@ body {
   // Import highlight.js theme
   @import "github";
 
-  border-top: 4px solid @key-color;
+  border-top: @border-top-width solid @key-color;
   background: #fff;
 
   // Variables (blue theme by default)
@@ -19,6 +19,7 @@ body {
   @link-color: #08a;
   @link-hover-color: #068;
   @border-color: #e3e3e3;
+  @border-top-width: 4px;
   @wrapper-width: 960px;
   @sidebar-width: 220px;
   @code-font: Consolas, Menlo,'Liberation Mono', Courier, monospace;
@@ -194,7 +195,7 @@ body {
 
     &.kss-fixed {
       position: fixed;
-      top: 0;
+      top: @border-top-width;
       .kss-sidebar-inner {
         padding-top: 40px + 4px;  // Keep border height
       }
