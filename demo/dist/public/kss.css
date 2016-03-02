@@ -1,13 +1,9 @@
-body {
-  margin: 0;
-}
 #kss-node {
   /*
 
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 */
-  background: #fff;
 }
 #kss-node .hljs-comment,
 #kss-node .diff .hljs-header {
