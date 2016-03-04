@@ -354,6 +354,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: #222;
   background-color: #f8f8f8;
   border-radius: 3px;
+  border: none;
   padding: 0px 5px;
   border: 1px solid #e3e3e3;
   vertical-align: 1px;
@@ -479,6 +480,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: #222;
   background-color: #f8f8f8;
   border-radius: 3px;
+  border: none;
   padding: 0px 5px;
   border: 1px solid #e3e3e3;
   vertical-align: 1px;
@@ -600,6 +602,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: #222;
   background-color: #f8f8f8;
   border-radius: 3px;
+  border: none;
   padding: 0px 5px;
   border: 1px solid #e3e3e3;
   vertical-align: 1px;
@@ -664,6 +667,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: #222;
   background-color: #f8f8f8;
   border-radius: 3px;
+  border: none;
 }
 #kss-node .kss-markup code span {
   font-family: Consolas, Menlo, 'Liberation Mono', Courier, monospace;
@@ -790,6 +794,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   color: #222;
   background-color: #f8f8f8;
   border-radius: 3px;
+  border: none;
   padding: 0px 5px;
   border: 1px solid #e3e3e3;
   vertical-align: 1px;
